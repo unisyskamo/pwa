@@ -13,14 +13,15 @@
       <h2>SpeechRecognitionAPIサンプル</h2>
       <button type="button" class="start">音声認識開始</button>
       <button type="button" class="stop">終了</button>
+      <button type="button" class="reset">リセット！</button>
       <div class="output"></div>
     </main>
     <script>
       const recognition = new webkitSpeechRecognition();
+      const output = document.querySelector(".output");
       recognition.lang = "ja";
       recognition.continuous = true;
       recognition.onresult = ({ results }) => {
-        const output = document.querySelector(".output");
         output.textContent = results[0][0].transcript;
       };
 
@@ -31,6 +32,10 @@
       const stopButton = document.querySelector(".stop");
       stopButton.addEventListener("click", () => {
         recognition.stop();
+      });
+      const resetButton = document.querySelector(".reset");
+      resetButton.addEventListener("click", () => {
+        output.textContent = "";
       });
     </script>
   </body>
