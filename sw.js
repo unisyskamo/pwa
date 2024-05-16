@@ -1,7 +1,7 @@
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    'mako5656.github.io/pwa/',
-    'mako5656.github.io/pwa/app.js',
+    'unisyskamo.github.io/pwa/',
+    'unisyskamo.github.io/pwa/app.js',
 ];
 
 self.addEventListener('install', function(event) {
