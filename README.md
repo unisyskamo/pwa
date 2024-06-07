@@ -1,2 +1,5 @@
-# pwa
-Sample for PWA(Progressive Web Apps)
+# pwa サンプルプログラム
+P5 Speech(P5.j)ライブラリを利用した音声入力サンプルプログラムです。
+オンライン前提となります。
+
+
